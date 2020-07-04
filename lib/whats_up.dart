@@ -16,10 +16,9 @@ class WhatsUpListItem extends StatelessWidget {
       child: ListTile(
         contentPadding: EdgeInsets.only(left: 16, top: 4, bottom: 4),
         onTap: () {
-          ExtendedNavigator.of(context)
-              .pushNamed<void>(Routes.pr60129fixInkFeature);
+          ExtendedNavigator.of(context).pushNamed<void>(whatsUp.route);
         },
-        title: Text('Ink feature fix'),
+        title: Text(whatsUp.title),
         trailing: PopupMenuButton<WhatsUpMenuEnum>(
           onSelected: (value) {
             if (value == WhatsUpMenuEnum.pr) {

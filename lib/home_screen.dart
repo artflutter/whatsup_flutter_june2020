@@ -41,6 +41,12 @@ class _HomeScreenState extends State<HomeScreen> {
         issue: 'https://github.com/flutter/flutter/issues/57662',
         route: Routes.pr60129fixInkFeature,
       ),
+      WhatsUp(
+        title: 'AppBar toolbar height',
+        pr: 'https://github.com/flutter/flutter/pull/59405',
+        issue: 'https://github.com/flutter/flutter/issues/23373',
+        route: Routes.pr59405appBarToolbarHeight,
+      ),
     ]
         .where(
           (e) =>
