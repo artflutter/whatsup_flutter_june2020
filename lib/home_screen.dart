@@ -53,6 +53,12 @@ class _HomeScreenState extends State<HomeScreen> {
         issue: 'https://github.com/flutter/flutter/issues/55593',
         route: Routes.pr59405stringCharacters,
       ),
+      WhatsUp(
+        title: 'Cupertino pull to refresh',
+        pr: 'https://github.com/flutter/flutter/pull/58392',
+        issue: 'https://github.com/flutter/flutter/issues/29159',
+        route: Routes.pr58392cupertinoPullToRefresh,
+      ),
     ]
         .where(
           (e) =>

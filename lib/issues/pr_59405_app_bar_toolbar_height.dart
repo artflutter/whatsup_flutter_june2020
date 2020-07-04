@@ -29,7 +29,7 @@ class _Pr59405AppBarToolbarHeightState
           Description(
             title: 'Details',
             description: [
-              'By default AppBar did not have the ability to change the heights. The default AppBar height defined by "kToolbarHeight" and equals ${kToolbarHeight}',
+              'By default AppBar did not have the ability to change the heights. The default AppBar height defined by "kToolbarHeight" and equals $kToolbarHeight',
               //https://stackoverflow.com/questions/51089994/flutter-setting-the-height-of-the-appbar
               'Press +10 or -10 buttons to change the toolbar height by 10'
             ],

@@ -22,8 +22,8 @@ class Pr59405StringCharacters extends StatelessWidget {
             title: 'Details',
             description: [
               'To better understand here is an example which counts the amount the length and characters amount in string with emoji',
-              '"${sampleText}" length is ${sampleText.length}',
-              '"${sampleText}" characters amount ${sampleText.characters.length}',
+              '"$sampleText" length is ${sampleText.length}',
+              '"$sampleText" characters amount ${sampleText.characters.length}',
               'Whenever you need to manipulate strings at the character level, you should be using the Characters type, not the methods of the String class.'
             ],
           ),
