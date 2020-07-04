@@ -47,6 +47,12 @@ class _HomeScreenState extends State<HomeScreen> {
         issue: 'https://github.com/flutter/flutter/issues/23373',
         route: Routes.pr59405appBarToolbarHeight,
       ),
+      WhatsUp(
+        title: 'Export characters',
+        pr: 'https://github.com/flutter/flutter/pull/59620',
+        issue: 'https://github.com/flutter/flutter/issues/55593',
+        route: Routes.pr59405stringCharacters,
+      ),
     ]
         .where(
           (e) =>

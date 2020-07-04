@@ -10,15 +10,18 @@ import 'package:auto_route/auto_route.dart';
 import 'package:whatsup_flutter_june2020/home_screen.dart';
 import 'package:whatsup_flutter_june2020/issues/pr_60129_fix_ink_feature.dart';
 import 'package:whatsup_flutter_june2020/issues/pr_59405_app_bar_toolbar_height.dart';
+import 'package:whatsup_flutter_june2020/issues/pr_59405_string_characters.dart';
 
 abstract class Routes {
   static const homeScreen = '/';
   static const pr60129fixInkFeature = '/pr60129fix-ink-feature';
   static const pr59405appBarToolbarHeight = '/pr59405app-bar-toolbar-height';
+  static const pr59405stringCharacters = '/pr59405string-characters';
   static const all = {
     homeScreen,
     pr60129fixInkFeature,
     pr59405appBarToolbarHeight,
+    pr59405stringCharacters,
   };
 }
 
@@ -46,6 +49,11 @@ class Router extends RouterBase {
       case Routes.pr59405appBarToolbarHeight:
         return MaterialPageRoute<dynamic>(
           builder: (context) => Pr59405AppBarToolbarHeight(),
+          settings: settings,
+        );
+      case Routes.pr59405stringCharacters:
+        return MaterialPageRoute<dynamic>(
+          builder: (context) => Pr59405StringCharacters(),
           settings: settings,
         );
       default:
