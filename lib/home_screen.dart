@@ -65,6 +65,12 @@ class _HomeScreenState extends State<HomeScreen> {
         issue: 'https://github.com/flutter/flutter/issues/49809',
         route: Routes.pr59586datePickerKeyboardNavigation,
       ),
+      WhatsUp(
+        title: 'Redesign Time Picker',
+        pr: 'https://github.com/flutter/flutter/pull/59191',
+        issue: 'https://github.com/flutter/flutter/issues/53905',
+        route: Routes.pr59191TimePickerRedesign,
+      ),
     ]
         .where(
           (e) =>

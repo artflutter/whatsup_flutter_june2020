@@ -13,6 +13,7 @@ import 'package:whatsup_flutter_june2020/issues/pr_59405_app_bar_toolbar_height.
 import 'package:whatsup_flutter_june2020/issues/pr_59405_string_characters.dart';
 import 'package:whatsup_flutter_june2020/issues/pr58392_cupertino_pull_to_refresh.dart';
 import 'package:whatsup_flutter_june2020/issues/pr59586_datepicker_keyboard_navigation.dart';
+import 'package:whatsup_flutter_june2020/issues/pr59191_timepicker_redesign.dart';
 
 abstract class Routes {
   static const homeScreen = '/';
@@ -23,6 +24,7 @@ abstract class Routes {
       '/pr58392cupertino-pull-to-refresh';
   static const pr59586datePickerKeyboardNavigation =
       '/pr59586date-picker-keyboard-navigation';
+  static const pr59191TimePickerRedesign = '/pr59191-time-picker-redesign';
   static const all = {
     homeScreen,
     pr60129fixInkFeature,
@@ -30,6 +32,7 @@ abstract class Routes {
     pr59405stringCharacters,
     pr58392cupertinoPullToRefresh,
     pr59586datePickerKeyboardNavigation,
+    pr59191TimePickerRedesign,
   };
 }
 
@@ -72,6 +75,11 @@ class Router extends RouterBase {
       case Routes.pr59586datePickerKeyboardNavigation:
         return MaterialPageRoute<dynamic>(
           builder: (context) => Pr59586DatePickerKeyboardNavigation(),
+          settings: settings,
+        );
+      case Routes.pr59191TimePickerRedesign:
+        return MaterialPageRoute<dynamic>(
+          builder: (context) => Pr59191TimePickerRedesign(),
           settings: settings,
         );
       default:

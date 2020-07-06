@@ -6,7 +6,7 @@ class Pr59586DatePickerKeyboardNavigation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AppBar toolbar height'),
+        title: Text('Date picker keyboard navigation'),
       ),
       body: Column(
         children: [
