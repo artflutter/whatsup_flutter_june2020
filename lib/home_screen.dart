@@ -71,6 +71,12 @@ class _HomeScreenState extends State<HomeScreen> {
         issue: 'https://github.com/flutter/flutter/issues/53905',
         route: Routes.pr59191TimePickerRedesign,
       ),
+      WhatsUp(
+        title: 'Label unnecessarily elided',
+        pr: 'https://github.com/flutter/flutter/pull/59807',
+        issue: 'https://github.com/flutter/flutter/issues/56008',
+        route: Routes.pr59807TextFieldLabel,
+      ),
     ]
         .where(
           (e) =>
