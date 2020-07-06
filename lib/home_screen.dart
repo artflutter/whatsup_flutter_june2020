@@ -59,6 +59,12 @@ class _HomeScreenState extends State<HomeScreen> {
         issue: 'https://github.com/flutter/flutter/issues/29159',
         route: Routes.pr58392cupertinoPullToRefresh,
       ),
+      WhatsUp(
+        title: 'Keyboard navigation for the Material Date Picker',
+        pr: 'https://github.com/flutter/flutter/pull/59586',
+        issue: 'https://github.com/flutter/flutter/issues/49809',
+        route: Routes.pr59586datePickerKeyboardNavigation,
+      ),
     ]
         .where(
           (e) =>
