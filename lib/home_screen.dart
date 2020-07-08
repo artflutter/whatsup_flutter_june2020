@@ -77,6 +77,12 @@ class _HomeScreenState extends State<HomeScreen> {
         issue: 'https://github.com/flutter/flutter/issues/56008',
         route: Routes.pr59807TextFieldLabel,
       ),
+      WhatsUp(
+        title: '[ExpansionPanelList] adds dividerColor property',
+        pr: 'https://github.com/flutter/flutter/pull/59641',
+        issue: 'https://github.com/flutter/flutter/issues/51321',
+        route: Routes.pr59641expandedDividerColor,
+      ),
     ]
         .where(
           (e) =>
