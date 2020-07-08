@@ -83,6 +83,12 @@ class _HomeScreenState extends State<HomeScreen> {
         issue: 'https://github.com/flutter/flutter/issues/51321',
         route: Routes.pr59641expandedDividerColor,
       ),
+      WhatsUp(
+        title: 'InteractiveViewer Widget',
+        pr: 'https://github.com/flutter/flutter/pull/56409',
+        issue: 'https://github.com/flutter/flutter/issues/8272',
+        route: Routes.pr56409interactiveViewer,
+      ),
     ]
         .where(
           (e) =>

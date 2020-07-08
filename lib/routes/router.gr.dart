@@ -16,6 +16,7 @@ import 'package:whatsup_flutter_june2020/issues/pr59586_datepicker_keyboard_navi
 import 'package:whatsup_flutter_june2020/issues/pr59191_timepicker_redesign.dart';
 import 'package:whatsup_flutter_june2020/issues/pr59807_text_field_label.dart';
 import 'package:whatsup_flutter_june2020/issues/pr59641_expanded_divider_color.dart';
+import 'package:whatsup_flutter_june2020/issues/pr56409_interactive_viewer.dart';
 
 abstract class Routes {
   static const homeScreen = '/';
@@ -29,6 +30,7 @@ abstract class Routes {
   static const pr59191TimePickerRedesign = '/pr59191-time-picker-redesign';
   static const pr59807TextFieldLabel = '/pr59807-text-field-label';
   static const pr59641expandedDividerColor = '/pr59641expanded-divider-color';
+  static const pr56409interactiveViewer = '/pr56409interactive-viewer';
   static const all = {
     homeScreen,
     pr60129fixInkFeature,
@@ -39,6 +41,7 @@ abstract class Routes {
     pr59191TimePickerRedesign,
     pr59807TextFieldLabel,
     pr59641expandedDividerColor,
+    pr56409interactiveViewer,
   };
 }
 
@@ -96,6 +99,11 @@ class Router extends RouterBase {
       case Routes.pr59641expandedDividerColor:
         return MaterialPageRoute<dynamic>(
           builder: (context) => Pr59641ExpandedDividerColor(),
+          settings: settings,
+        );
+      case Routes.pr56409interactiveViewer:
+        return MaterialPageRoute<dynamic>(
+          builder: (context) => Pr56409InteractiveViewer(),
           settings: settings,
         );
       default:
