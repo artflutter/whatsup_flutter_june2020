@@ -95,6 +95,11 @@ class _HomeScreenState extends State<HomeScreen> {
         issue: 'https://github.com/flutter/flutter/issues/27461',
         route: Routes.pr58708appBarShadowColor,
       ),
+      WhatsUp(
+        title: 'InkResponse\'s focus highlight honor the radius parameter',
+        pr: 'https://github.com/flutter/flutter/pull/59117',
+        route: Routes.pr59117focusHighlightRadius,
+      ),
     ]
         .where(
           (e) =>

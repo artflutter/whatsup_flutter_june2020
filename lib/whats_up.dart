@@ -30,14 +30,16 @@ class WhatsUpListItem extends StatelessWidget {
           },
           itemBuilder: (BuildContext context) {
             return [
-              PopupMenuItem<WhatsUpMenuEnum>(
-                value: WhatsUpMenuEnum.pr,
-                child: Text('Related PR'),
-              ),
-              PopupMenuItem<WhatsUpMenuEnum>(
-                value: WhatsUpMenuEnum.issue,
-                child: Text('Fixed issue'),
-              ),
+              if (WhatsUpMenuEnum.pr != null)
+                PopupMenuItem<WhatsUpMenuEnum>(
+                  value: WhatsUpMenuEnum.pr,
+                  child: Text('Related PR'),
+                ),
+              if (WhatsUpMenuEnum.issue != null)
+                PopupMenuItem<WhatsUpMenuEnum>(
+                  value: WhatsUpMenuEnum.issue,
+                  child: Text('Fixed issue'),
+                ),
             ];
           },
         ),
