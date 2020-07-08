@@ -19,6 +19,7 @@ import 'package:whatsup_flutter_june2020/issues/pr59641_expanded_divider_color.d
 import 'package:whatsup_flutter_june2020/issues/pr56409_interactive_viewer.dart';
 import 'package:whatsup_flutter_june2020/issues/pr58708_app_bar_shadow_color.dart';
 import 'package:whatsup_flutter_june2020/issues/pr59117_focus_highlight_radius.dart';
+import 'package:whatsup_flutter_june2020/issues/pr59010_scale_input_decorator_label_width.dart';
 
 abstract class Routes {
   static const homeScreen = '/';
@@ -35,6 +36,8 @@ abstract class Routes {
   static const pr56409interactiveViewer = '/pr56409interactive-viewer';
   static const pr58708appBarShadowColor = '/pr58708app-bar-shadow-color';
   static const pr59117focusHighlightRadius = '/pr59117focus-highlight-radius';
+  static const pr59010scaleInputDecoratorLabelWidth =
+      '/pr59010scale-input-decorator-label-width';
   static const all = {
     homeScreen,
     pr60129fixInkFeature,
@@ -48,6 +51,7 @@ abstract class Routes {
     pr56409interactiveViewer,
     pr58708appBarShadowColor,
     pr59117focusHighlightRadius,
+    pr59010scaleInputDecoratorLabelWidth,
   };
 }
 
@@ -120,6 +124,11 @@ class Router extends RouterBase {
       case Routes.pr59117focusHighlightRadius:
         return MaterialPageRoute<dynamic>(
           builder: (context) => Pr59117FocusHighlightRadius(),
+          settings: settings,
+        );
+      case Routes.pr59010scaleInputDecoratorLabelWidth:
+        return MaterialPageRoute<dynamic>(
+          builder: (context) => Pr59010ScaleInputDecoratorLabelWidth(),
           settings: settings,
         );
       default:

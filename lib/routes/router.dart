@@ -3,6 +3,7 @@ import 'package:whatsup_flutter_june2020/home_screen.dart';
 import 'package:whatsup_flutter_june2020/issues/pr56409_interactive_viewer.dart';
 import 'package:whatsup_flutter_june2020/issues/pr58392_cupertino_pull_to_refresh.dart';
 import 'package:whatsup_flutter_june2020/issues/pr58708_app_bar_shadow_color.dart';
+import 'package:whatsup_flutter_june2020/issues/pr59010_scale_input_decorator_label_width.dart';
 import 'package:whatsup_flutter_june2020/issues/pr59117_focus_highlight_radius.dart';
 import 'package:whatsup_flutter_june2020/issues/pr59191_timepicker_redesign.dart';
 import 'package:whatsup_flutter_june2020/issues/pr59586_datepicker_keyboard_navigation.dart';
@@ -38,4 +39,6 @@ class $Router {
   Pr58708AppBarShadowColor pr58708appBarShadowColor;
 
   Pr59117FocusHighlightRadius pr59117focusHighlightRadius;
+
+  Pr59010ScaleInputDecoratorLabelWidth pr59010scaleInputDecoratorLabelWidth;
 }

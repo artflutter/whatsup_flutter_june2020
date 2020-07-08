@@ -100,6 +100,12 @@ class _HomeScreenState extends State<HomeScreen> {
         pr: 'https://github.com/flutter/flutter/pull/59117',
         route: Routes.pr59117focusHighlightRadius,
       ),
+      WhatsUp(
+        title: 'Scale input decorator label width',
+        pr: 'https://github.com/flutter/flutter/pull/59010',
+        issue: 'https://github.com/flutter/flutter/issues/56848',
+        route: Routes.pr59010scaleInputDecoratorLabelWidth,
+      ),
     ]
         .where(
           (e) =>

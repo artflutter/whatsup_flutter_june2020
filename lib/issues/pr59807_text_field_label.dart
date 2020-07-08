@@ -21,7 +21,6 @@ class Pr59807TextFieldLabel extends StatelessWidget {
               width: 300,
               height: 200,
               child: TextField(
-//                controller: _controller,
                 decoration: const InputDecoration(
                   prefixText: 'The five boxing wizards jump quickly:',
                   labelText: 'My Label',
