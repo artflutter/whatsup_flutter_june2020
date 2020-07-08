@@ -17,6 +17,7 @@ import 'package:whatsup_flutter_june2020/issues/pr59191_timepicker_redesign.dart
 import 'package:whatsup_flutter_june2020/issues/pr59807_text_field_label.dart';
 import 'package:whatsup_flutter_june2020/issues/pr59641_expanded_divider_color.dart';
 import 'package:whatsup_flutter_june2020/issues/pr56409_interactive_viewer.dart';
+import 'package:whatsup_flutter_june2020/issues/pr58708_app_bar_shadow_color.dart';
 
 abstract class Routes {
   static const homeScreen = '/';
@@ -31,6 +32,7 @@ abstract class Routes {
   static const pr59807TextFieldLabel = '/pr59807-text-field-label';
   static const pr59641expandedDividerColor = '/pr59641expanded-divider-color';
   static const pr56409interactiveViewer = '/pr56409interactive-viewer';
+  static const pr58708appBarShadowColor = '/pr58708app-bar-shadow-color';
   static const all = {
     homeScreen,
     pr60129fixInkFeature,
@@ -42,6 +44,7 @@ abstract class Routes {
     pr59807TextFieldLabel,
     pr59641expandedDividerColor,
     pr56409interactiveViewer,
+    pr58708appBarShadowColor,
   };
 }
 
@@ -104,6 +107,11 @@ class Router extends RouterBase {
       case Routes.pr56409interactiveViewer:
         return MaterialPageRoute<dynamic>(
           builder: (context) => Pr56409InteractiveViewer(),
+          settings: settings,
+        );
+      case Routes.pr58708appBarShadowColor:
+        return MaterialPageRoute<dynamic>(
+          builder: (context) => Pr58708AppBarShadowColor(),
           settings: settings,
         );
       default:

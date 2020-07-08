@@ -89,6 +89,12 @@ class _HomeScreenState extends State<HomeScreen> {
         issue: 'https://github.com/flutter/flutter/issues/8272',
         route: Routes.pr56409interactiveViewer,
       ),
+      WhatsUp(
+        title: 'AppBar shadow color',
+        pr: 'https://github.com/flutter/flutter/pull/58708',
+        issue: 'https://github.com/flutter/flutter/issues/27461',
+        route: Routes.pr58708appBarShadowColor,
+      ),
     ]
         .where(
           (e) =>
