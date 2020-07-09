@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route_annotations.dart';
 import 'package:whatsup_flutter_june2020/home_screen.dart';
 import 'package:whatsup_flutter_june2020/issues/pr56409_interactive_viewer.dart';
 import 'package:whatsup_flutter_june2020/issues/pr57644_tab_bar_physics.dart';
+import 'package:whatsup_flutter_june2020/issues/pr57733_list_tile_shape.dart';
 import 'package:whatsup_flutter_june2020/issues/pr58392_cupertino_pull_to_refresh.dart';
 import 'package:whatsup_flutter_june2020/issues/pr58593_sliver_app_bar_collapsed_height.dart';
 import 'package:whatsup_flutter_june2020/issues/pr58708_app_bar_shadow_color.dart';
@@ -47,4 +48,6 @@ class $Router {
   Pr58593SliverAppBarCollapsedHeight pr58593sliverAppBarCollapsedHeight;
 
   Pr57644TabBarPhysics pr57644tabBarPhysics;
+
+  Pr57733ListTileShape pr57733listTileShape;
 }

@@ -118,6 +118,12 @@ class _HomeScreenState extends State<HomeScreen> {
         issue: 'https://github.com/flutter/flutter/issues/57416',
         route: Routes.pr57644tabBarPhysics,
       ),
+      WhatsUp(
+        title: 'Support custom shapes for ListTiles',
+        pr: 'https://github.com/flutter/flutter/pull/57733',
+        issue: 'https://github.com/flutter/flutter/issues/57730',
+        route: Routes.pr57733listTileShape,
+      ),
 //      WhatsUp(
 //        title: '',
 //        pr: '',
