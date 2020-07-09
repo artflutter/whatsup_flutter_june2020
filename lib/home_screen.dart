@@ -124,6 +124,12 @@ class _HomeScreenState extends State<HomeScreen> {
         issue: 'https://github.com/flutter/flutter/issues/57730',
         route: Routes.pr57733listTileShape,
       ),
+      WhatsUp(
+        title: 'Allow null value for CheckboxListTile',
+        pr: 'https://github.com/flutter/flutter/pull/58154',
+        issue: 'https://github.com/flutter/flutter/issues/58108',
+        route: Routes.pr58154CheckboxListTileNullValue,
+      ),
 //      WhatsUp(
 //        title: '',
 //        pr: '',

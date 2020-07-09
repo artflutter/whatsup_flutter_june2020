@@ -23,6 +23,7 @@ import 'package:whatsup_flutter_june2020/issues/pr59010_scale_input_decorator_la
 import 'package:whatsup_flutter_june2020/issues/pr58593_sliver_app_bar_collapsed_height.dart';
 import 'package:whatsup_flutter_june2020/issues/pr57644_tab_bar_physics.dart';
 import 'package:whatsup_flutter_june2020/issues/pr57733_list_tile_shape.dart';
+import 'package:whatsup_flutter_june2020/issues/pr58154_checkbox_list_tile_null_value.dart';
 
 abstract class Routes {
   static const homeScreen = '/';
@@ -45,6 +46,8 @@ abstract class Routes {
       '/pr58593sliver-app-bar-collapsed-height';
   static const pr57644tabBarPhysics = '/pr57644tab-bar-physics';
   static const pr57733listTileShape = '/pr57733list-tile-shape';
+  static const pr58154CheckboxListTileNullValue =
+      '/pr58154-checkbox-list-tile-null-value';
   static const all = {
     homeScreen,
     pr60129fixInkFeature,
@@ -62,6 +65,7 @@ abstract class Routes {
     pr58593sliverAppBarCollapsedHeight,
     pr57644tabBarPhysics,
     pr57733listTileShape,
+    pr58154CheckboxListTileNullValue,
   };
 }
 
@@ -154,6 +158,11 @@ class Router extends RouterBase {
       case Routes.pr57733listTileShape:
         return MaterialPageRoute<dynamic>(
           builder: (context) => Pr57733ListTileShape(),
+          settings: settings,
+        );
+      case Routes.pr58154CheckboxListTileNullValue:
+        return MaterialPageRoute<dynamic>(
+          builder: (context) => Pr58154CheckboxListTileNullValue(),
           settings: settings,
         );
       default:
