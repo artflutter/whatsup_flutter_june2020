@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route_annotations.dart';
 import 'package:whatsup_flutter_june2020/home_screen.dart';
+import 'package:whatsup_flutter_june2020/issues/pr54128_material_scrollbar_is_always_shown.dart';
 import 'package:whatsup_flutter_june2020/issues/pr56409_interactive_viewer.dart';
 import 'package:whatsup_flutter_june2020/issues/pr57644_tab_bar_physics.dart';
 import 'package:whatsup_flutter_june2020/issues/pr57733_list_tile_shape.dart';
@@ -56,4 +57,6 @@ class $Router {
   Pr58154CheckboxListTileNullValue pr58154CheckboxListTileNullValue;
 
   Pr58201MaterialButtonDisabledElevation pr58201materialButtonDisabledElevation;
+
+  Pr54128MaterialScrollbarIsAlwaysShown pr54128materialScrollbarIsAlwaysShown;
 }

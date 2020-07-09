@@ -136,6 +136,12 @@ class _HomeScreenState extends State<HomeScreen> {
         issue: 'https://github.com/flutter/flutter/issues/58201',
         route: Routes.pr58201materialButtonDisabledElevation,
       ),
+      WhatsUp(
+        title: 'Fix isAlwaysShown material scrollbar.dart',
+        pr: 'https://github.com/flutter/flutter/pull/54128',
+        issue: 'https://github.com/flutter/flutter/issues/53771',
+        route: Routes.pr54128materialScrollbarIsAlwaysShown,
+      ),
 //      WhatsUp(
 //        title: '',
 //        pr: '',

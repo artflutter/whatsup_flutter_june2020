@@ -25,6 +25,7 @@ import 'package:whatsup_flutter_june2020/issues/pr57644_tab_bar_physics.dart';
 import 'package:whatsup_flutter_june2020/issues/pr57733_list_tile_shape.dart';
 import 'package:whatsup_flutter_june2020/issues/pr58154_checkbox_list_tile_null_value.dart';
 import 'package:whatsup_flutter_june2020/issues/pr58201_material_button_disabled_elevation.dart';
+import 'package:whatsup_flutter_june2020/issues/pr54128_material_scrollbar_is_always_shown.dart';
 
 abstract class Routes {
   static const homeScreen = '/';
@@ -51,6 +52,8 @@ abstract class Routes {
       '/pr58154-checkbox-list-tile-null-value';
   static const pr58201materialButtonDisabledElevation =
       '/pr58201material-button-disabled-elevation';
+  static const pr54128materialScrollbarIsAlwaysShown =
+      '/pr54128material-scrollbar-is-always-shown';
   static const all = {
     homeScreen,
     pr60129fixInkFeature,
@@ -70,6 +73,7 @@ abstract class Routes {
     pr57733listTileShape,
     pr58154CheckboxListTileNullValue,
     pr58201materialButtonDisabledElevation,
+    pr54128materialScrollbarIsAlwaysShown,
   };
 }
 
@@ -172,6 +176,11 @@ class Router extends RouterBase {
       case Routes.pr58201materialButtonDisabledElevation:
         return MaterialPageRoute<dynamic>(
           builder: (context) => Pr58201MaterialButtonDisabledElevation(),
+          settings: settings,
+        );
+      case Routes.pr54128materialScrollbarIsAlwaysShown:
+        return MaterialPageRoute<dynamic>(
+          builder: (context) => Pr54128MaterialScrollbarIsAlwaysShown(),
           settings: settings,
         );
       default:
