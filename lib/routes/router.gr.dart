@@ -20,6 +20,7 @@ import 'package:whatsup_flutter_june2020/issues/pr56409_interactive_viewer.dart'
 import 'package:whatsup_flutter_june2020/issues/pr58708_app_bar_shadow_color.dart';
 import 'package:whatsup_flutter_june2020/issues/pr59117_focus_highlight_radius.dart';
 import 'package:whatsup_flutter_june2020/issues/pr59010_scale_input_decorator_label_width.dart';
+import 'package:whatsup_flutter_june2020/issues/pr58593_sliver_app_bar_collapsed_height.dart';
 
 abstract class Routes {
   static const homeScreen = '/';
@@ -38,6 +39,8 @@ abstract class Routes {
   static const pr59117focusHighlightRadius = '/pr59117focus-highlight-radius';
   static const pr59010scaleInputDecoratorLabelWidth =
       '/pr59010scale-input-decorator-label-width';
+  static const pr58593sliverAppBarCollapsedHeight =
+      '/pr58593sliver-app-bar-collapsed-height';
   static const all = {
     homeScreen,
     pr60129fixInkFeature,
@@ -52,6 +55,7 @@ abstract class Routes {
     pr58708appBarShadowColor,
     pr59117focusHighlightRadius,
     pr59010scaleInputDecoratorLabelWidth,
+    pr58593sliverAppBarCollapsedHeight,
   };
 }
 
@@ -129,6 +133,11 @@ class Router extends RouterBase {
       case Routes.pr59010scaleInputDecoratorLabelWidth:
         return MaterialPageRoute<dynamic>(
           builder: (context) => Pr59010ScaleInputDecoratorLabelWidth(),
+          settings: settings,
+        );
+      case Routes.pr58593sliverAppBarCollapsedHeight:
+        return MaterialPageRoute<dynamic>(
+          builder: (context) => Pr58593SliverAppBarCollapsedHeight(),
           settings: settings,
         );
       default:
