@@ -4,6 +4,7 @@ import 'package:whatsup_flutter_june2020/issues/pr54128_material_scrollbar_is_al
 import 'package:whatsup_flutter_june2020/issues/pr56409_interactive_viewer.dart';
 import 'package:whatsup_flutter_june2020/issues/pr57644_tab_bar_physics.dart';
 import 'package:whatsup_flutter_june2020/issues/pr57733_list_tile_shape.dart';
+import 'package:whatsup_flutter_june2020/issues/pr58037_switch_list_tile_control_affinity.dart';
 import 'package:whatsup_flutter_june2020/issues/pr58154_checkbox_list_tile_null_value.dart';
 import 'package:whatsup_flutter_june2020/issues/pr58201_material_button_disabled_elevation.dart';
 import 'package:whatsup_flutter_june2020/issues/pr58392_cupertino_pull_to_refresh.dart';
@@ -59,4 +60,6 @@ class $Router {
   Pr58201MaterialButtonDisabledElevation pr58201materialButtonDisabledElevation;
 
   Pr54128MaterialScrollbarIsAlwaysShown pr54128materialScrollbarIsAlwaysShown;
+
+  Pr58037SwitchListTileControlAffinity pr58037switchListTileControlAffinity;
 }

@@ -142,6 +142,12 @@ class _HomeScreenState extends State<HomeScreen> {
         issue: 'https://github.com/flutter/flutter/issues/53771',
         route: Routes.pr54128materialScrollbarIsAlwaysShown,
       ),
+      WhatsUp(
+        title: '[SwitchListTile] adds controlAffinity property',
+        pr: 'https://github.com/flutter/flutter/pull/58037',
+        issue: 'https://github.com/flutter/flutter/issues/22134',
+        route: Routes.pr58037switchListTileControlAffinity,
+      ),
 //      WhatsUp(
 //        title: '',
 //        pr: '',
