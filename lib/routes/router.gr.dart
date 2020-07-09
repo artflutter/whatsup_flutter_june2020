@@ -21,6 +21,7 @@ import 'package:whatsup_flutter_june2020/issues/pr58708_app_bar_shadow_color.dar
 import 'package:whatsup_flutter_june2020/issues/pr59117_focus_highlight_radius.dart';
 import 'package:whatsup_flutter_june2020/issues/pr59010_scale_input_decorator_label_width.dart';
 import 'package:whatsup_flutter_june2020/issues/pr58593_sliver_app_bar_collapsed_height.dart';
+import 'package:whatsup_flutter_june2020/issues/pr57644_tab_bar_physics.dart';
 
 abstract class Routes {
   static const homeScreen = '/';
@@ -41,6 +42,7 @@ abstract class Routes {
       '/pr59010scale-input-decorator-label-width';
   static const pr58593sliverAppBarCollapsedHeight =
       '/pr58593sliver-app-bar-collapsed-height';
+  static const pr57644tabBarPhysics = '/pr57644tab-bar-physics';
   static const all = {
     homeScreen,
     pr60129fixInkFeature,
@@ -56,6 +58,7 @@ abstract class Routes {
     pr59117focusHighlightRadius,
     pr59010scaleInputDecoratorLabelWidth,
     pr58593sliverAppBarCollapsedHeight,
+    pr57644tabBarPhysics,
   };
 }
 
@@ -138,6 +141,11 @@ class Router extends RouterBase {
       case Routes.pr58593sliverAppBarCollapsedHeight:
         return MaterialPageRoute<dynamic>(
           builder: (context) => Pr58593SliverAppBarCollapsedHeight(),
+          settings: settings,
+        );
+      case Routes.pr57644tabBarPhysics:
+        return MaterialPageRoute<dynamic>(
+          builder: (context) => Pr57644TabBarPhysics(),
           settings: settings,
         );
       default:

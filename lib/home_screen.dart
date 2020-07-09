@@ -112,6 +112,12 @@ class _HomeScreenState extends State<HomeScreen> {
         issue: 'https://github.com/flutter/flutter/issues/21298',
         route: Routes.pr58593sliverAppBarCollapsedHeight,
       ),
+      WhatsUp(
+        title: 'Adds physics to the TabBar',
+        pr: 'https://github.com/flutter/flutter/pull/57644',
+        issue: 'https://github.com/flutter/flutter/issues/57416',
+        route: Routes.pr57644tabBarPhysics,
+      ),
 //      WhatsUp(
 //        title: '',
 //        pr: '',

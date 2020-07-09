@@ -20,6 +20,12 @@ class _PR60129FixInkFeatureState extends State<PR60129FixInkFeature>
   }
 
   @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
