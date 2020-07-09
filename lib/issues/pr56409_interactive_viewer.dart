@@ -9,7 +9,7 @@ class Pr56409InteractiveViewer extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Redesign time picker'),
+        title: Text('Interactive viewer widget'),
       ),
       body: Column(
         children: [

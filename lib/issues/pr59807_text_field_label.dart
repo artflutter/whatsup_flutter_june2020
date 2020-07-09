@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:whatsup_flutter_june2020/description.dart';
 
 class Pr59807TextFieldLabel extends StatelessWidget {
@@ -21,6 +22,7 @@ class Pr59807TextFieldLabel extends StatelessWidget {
               width: 300,
               height: 200,
               child: TextField(
+                mouseCursor: SystemMouseCursors.grab,
                 decoration: const InputDecoration(
                   prefixText: 'The five boxing wizards jump quickly:',
                   labelText: 'My Label',

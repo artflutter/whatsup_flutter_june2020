@@ -15,7 +15,7 @@ class _Pr58154CheckboxListTileNullValueState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Redesign time picker'),
+        title: Text('Checkbox list tile tristate'),
       ),
       body: Column(
         children: [

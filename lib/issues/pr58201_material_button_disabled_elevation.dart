@@ -1,58 +1,57 @@
 import 'package:flutter/material.dart';
 import 'package:whatsup_flutter_june2020/description.dart';
 
-class Pr57733ListTileShape extends StatefulWidget {
+class Pr58201MaterialButtonDisabledElevation extends StatefulWidget {
   @override
-  _Pr57733ListTileShapeState createState() => _Pr57733ListTileShapeState();
+  _Pr58201MaterialButtonDisabledElevationState createState() =>
+      _Pr58201MaterialButtonDisabledElevationState();
 }
 
-class _Pr57733ListTileShapeState extends State<Pr57733ListTileShape> {
-  double radius = 4;
+class _Pr58201MaterialButtonDisabledElevationState
+    extends State<Pr58201MaterialButtonDisabledElevation> {
+  double disabledElevation = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('List tile shape'),
+        title: Text('Material button disabled elevation'),
       ),
       body: Column(
         children: [
           Description(
             title: 'Description',
             description: [
-              'Support for applying custom ShapeBorders to the InkWell of ListTiles, so they can match the shapes of their parents, such as when used within Cards.',
+              'Pass the disabledElevation parameter of MaterialButton into its super widget.',
             ],
           ),
           Description(
             title: 'Details',
             description: [
-              'Select border radius with slider and long press the tile to ses how inkwell shape changes',
+              'Drag the slider to change the disabled elevation',
             ],
           ),
           Slider(
-              value: radius,
+              value: disabledElevation,
               min: 0,
               max: 100.0,
               divisions: 10,
               activeColor: Colors.red,
               inactiveColor: Colors.black,
-              label: '$radius',
+              label: '$disabledElevation',
               onChanged: (double newValue) {
                 setState(() {
-                  radius = newValue;
+                  disabledElevation = newValue;
                 });
               },
               semanticFormatterCallback: (double newValue) {
                 return '$newValue';
               }),
-          Card(
-            child: ListTile(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(radius)),
-              ),
-              onTap: () {},
-              title: Text('Dummy title'),
-            ),
+          MaterialButton(
+            onPressed: null,
+            disabledElevation: disabledElevation,
+            disabledColor: Colors.black12,
+            child: Text('Sample material button'),
           )
         ],
       ),
